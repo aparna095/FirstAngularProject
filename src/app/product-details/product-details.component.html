@@ -1,0 +1,37 @@
+<h1 class="bg-primary text-white text-center">
+    Product Details
+</h1>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6 border border-dark border-6">
+            <table class="form-controls">
+                <tr>
+                    <td>
+                        <label for="cName" class="text-primary">Product Id </label></td>
+                    <td>
+                        <input type ="text" value="{{product.prodId}}" readonly></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>
+                        <label for="city" class="text-primary">Product Name </label></td> 
+                    <td>
+                        <input type ="text" value="{{product.prodName}}" readonly></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>
+                        <label for="pin" class="text-primary">Product Price </label></td>
+                    <td>
+                        <input type ="text" value="{{product.prodPrice}}" readonly> </td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+</div>
+
+<br/>
+<button class="btn btn-outline-primary btn-lg d-inline m-2"><a routerLink = "/product-list">Product List</a></button>
+<button class="btn btn-outline-primary btn-lg d-inline m-2"><a routerLink = "/home">Home</a></button>
+<button class="btn btn-outline-primary btn-lg d-inline m-2"><a routerLink = "/cart/{{product.prodId}}">Add to Cart</a></button>
